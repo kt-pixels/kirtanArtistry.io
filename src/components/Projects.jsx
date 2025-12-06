@@ -56,11 +56,19 @@ const PROJECTS = [
 
 export default function Projects() {
   const [mounted, setMounted] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(3); // show 3 by default
 
   useEffect(() => {
     const t = setTimeout(() => setMounted(true), 100);
     return () => clearTimeout(t);
   }, []);
+
+  const visibleProjects = PROJECTS.slice(0, visibleCount);
+  const canLoadMore = visibleCount < PROJECTS.length;
+
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => Math.min(prev + 3, PROJECTS.length));
+  };
 
   return (
     <section id="projects" className="py-20">
@@ -86,15 +94,28 @@ export default function Projects() {
           </div>
         </div>
 
+        {/* Grid of visible projects */}
         <div
           className={`grid grid-cols-1 gap-8 lg:grid-cols-3 transition-all duration-700 ${
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
-          {PROJECTS.map((p, i) => (
-            <ProjectCard key={p.title} p={p} index={i} />
+          {visibleProjects.map((p, i) => (
+            <ProjectCard key={`${p.title}-${i}`} p={p} index={i} />
           ))}
         </div>
+
+        {/* Load more button */}
+        {canLoadMore && (
+          <div className="mt-10 flex justify-center">
+            <button
+              onClick={handleLoadMore}
+              className="px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-white text-sm font-medium shadow-lg hover:-translate-y-0.5 hover:shadow-xl transition"
+            >
+              Load more
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
@@ -122,7 +143,7 @@ function ProjectCard({ p, index }) {
       >
         {/* Inner frosted card */}
         <article
-          className="relative rounded-3xl overflow-hidden bg-white/50 backdrop-blur-md shadow-2xl ring-1 ring-purple-200/30
+          className="group relative rounded-3xl overflow-hidden bg-white/50 backdrop-blur-md shadow-2xl ring-1 ring-purple-200/30
                      hover:-translate-y-2 focus-within:-translate-y-2 transition-transform duration-300"
           tabIndex={0}
         >
@@ -144,7 +165,7 @@ function ProjectCard({ p, index }) {
             />
 
             {/* overlay that appears on hover/focus */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 hover:opacity-100 focus-within:opacity-100 transition-opacity duration-300 flex items-end">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 flex items-end">
               <div className="p-6 w-full flex items-end justify-between">
                 <div>
                   <h3 className="text-lg font-semibold text-white drop-shadow">
@@ -192,13 +213,13 @@ function ProjectCard({ p, index }) {
             </div>
 
             {/* short description / CTA */}
-            <div className="mt-5 flex items-center justify-between">
+            <div className="mt-5 flex items-center justify-between gap-3">
               <p className="text-sm text-gray-600">
                 Modern responsive UI, performance optimizations, and clean
                 architecture.
               </p>
 
-              <div className="ml-4 flex items-center gap-3">
+              <div className="flex items-center gap-3">
                 <a
                   href={p.live}
                   className="hidden md:inline-flex px-3 py-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-white text-sm shadow hover:scale-105 transition"
@@ -217,7 +238,7 @@ function ProjectCard({ p, index }) {
           </div>
 
           {/* subtle focus ring for keyboard users */}
-          <span className="absolute inset-0 pointer-events-none rounded-3xl ring-0 focus-within:ring-2 focus-within:ring-purple-300/40" />
+          <span className="absolute inset-0 pointer-events-none rounded-3xl ring-0 group-focus-within:ring-2 group-focus-within:ring-purple-300/40" />
         </article>
       </div>
     </div>

@@ -57,25 +57,29 @@ export default function Skills() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const t = setTimeout(() => setMounted(true), 60);
+    const t = setTimeout(() => setMounted(true), 80);
     return () => clearTimeout(t);
   }, []);
 
   return (
     <section
       id="skills"
-      className="mt-10
-    py-20 
-             bg-white/10 backdrop-blur-xl 
-             rounded-3xl 
-             shadow-[0_8px_30px_rgba(0,0,0,0.15)] 
-             border border-white/20"
+      className="mt-10 py-20 bg-white/10 backdrop-blur-xl rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.15)] border border-white/20 relative overflow-hidden"
     >
-      <div className="mx-auto max-w-6xl px-6 lg:px-8">
-        <div className="flex items-end justify-between mb-8">
+      {/* animated background glows */}
+      <div className="pointer-events-none absolute -top-10 left-0 w-40 h-40 rounded-full bg-pink-500/10 blur-3xl motion-safe:animate-pulse" />
+      <div className="pointer-events-none absolute -bottom-12 right-4 w-52 h-52 rounded-full bg-purple-600/10 blur-3xl motion-safe:animate-pulse" />
+
+      <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
+        <div
+          className={`flex flex-col sm:flex-row sm:items-end sm:justify-between mb-8 gap-4 transform transition-all duration-700 ease-out motion-safe:duration-700 ${
+            mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+          }`}
+          style={{ transitionDelay: mounted ? "80ms" : "0ms" }}
+        >
           <div>
-            <h2 className="text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">
-              Skills & Mastery
+            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">
+              Skills &amp; Mastery
             </h2>
             <p className="mt-2 text-sm text-gray-300 max-w-xl">
               A concise view of core competencies — visualized proficiency,
@@ -94,10 +98,10 @@ export default function Skills() {
         </div>
 
         <div
-          className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 transition-all duration-700
-            ${
-              mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-            }`}
+          className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 transition-all duration-700 ease-out motion-safe:duration-700 ${
+            mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          }`}
+          style={{ transitionDelay: mounted ? "160ms" : "0ms" }}
         >
           {SKILLS.map((s, i) => (
             <SkillCard key={s.name} skill={s} index={i} />
@@ -112,9 +116,9 @@ export default function Skills() {
 function SkillCard({ skill, index }) {
   const [visible, setVisible] = useState(false);
 
-  // staggered reveal
+  // staggered reveal per card
   useEffect(() => {
-    const t = setTimeout(() => setVisible(true), 80 + index * 80);
+    const t = setTimeout(() => setVisible(true), 120 + index * 90);
     return () => clearTimeout(t);
   }, [index]);
 
@@ -128,7 +132,7 @@ function SkillCard({ skill, index }) {
     <div
       className={`relative rounded-2xl p-5 overflow-hidden
         bg-gradient-to-br from-black/45 to-black/35 ring-1 ring-pink-900/18
-        shadow-2xl transform transition-all duration-300
+        shadow-2xl transform transition-all duration-300 motion-safe:duration-300
         hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(149,66,226,0.12)]
         group cursor-default
         ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}

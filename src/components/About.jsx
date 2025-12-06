@@ -17,27 +17,31 @@ const SKILLS = [
 ];
 
 export default function About() {
-  const [show, setShow] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  // simple reveal on mount for a polished entrance
+  // smooth reveal on mount
   useEffect(() => {
-    const t = setTimeout(() => setShow(true), 80);
+    const t = setTimeout(() => setMounted(true), 80);
     return () => clearTimeout(t);
   }, []);
 
   return (
     <section
       id="about"
-      className="
-    py-20 
-             bg-white/10 backdrop-blur-xl 
-             rounded-3xl 
-             shadow-[0_8px_30px_rgba(0,0,0,0.15)] 
-             border border-white/20"
+      className="py-20 bg-white/10 backdrop-blur-xl rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.15)] border border-white/20 relative overflow-hidden"
     >
-      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+      {/* subtle moving glow behind */}
+      <div className="pointer-events-none absolute -top-10 -left-10 w-40 h-40 rounded-full bg-pink-500/10 blur-3xl motion-safe:animate-pulse" />
+      <div className="pointer-events-none absolute -bottom-12 right-0 w-52 h-52 rounded-full bg-purple-600/10 blur-3xl motion-safe:animate-pulse" />
+
+      <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         {/* header */}
-        <header className="mb-10">
+        <header
+          className={`mb-10 transform transition-all duration-700 ease-out motion-safe:duration-700 ${
+            mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+          }`}
+          style={{ transitionDelay: mounted ? "80ms" : "0ms" }}
+        >
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-white">
             About Kirtan Kaushik
           </h2>
@@ -49,12 +53,14 @@ export default function About() {
         </header>
 
         {/* content grid */}
-        <div
-          className={`grid grid-cols-1 lg:grid-cols-2 gap-10 items-start transition-all duration-700 ease-out
-            ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
-        >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           {/* LEFT: profile card */}
-          <div className="relative">
+          <div
+            className={`relative transform transition-all duration-700 ease-out motion-safe:duration-700 ${
+              mounted ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"
+            }`}
+            style={{ transitionDelay: mounted ? "180ms" : "0ms" }}
+          >
             {/* decorative gradient border */}
             <div className="absolute -inset-1 rounded-3xl bg-gradient-to-br from-purple-800/30 via-pink-700/15 to-transparent blur-xl opacity-60 pointer-events-none" />
 
@@ -77,7 +83,7 @@ export default function About() {
                   <div className="mt-5 flex flex-wrap gap-3">
                     <a
                       href="#projects"
-                      className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-sm font-medium shadow-lg transform hover:-translate-y-0.5 transition"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-sm font-medium shadow-lg transform motion-safe:hover:-translate-y-0.5 transition"
                     >
                       View Projects
                     </a>
@@ -110,7 +116,12 @@ export default function About() {
           </div>
 
           {/* RIGHT: skills & details */}
-          <aside>
+          <aside
+            className={`transform transition-all duration-700 ease-out motion-safe:duration-700 ${
+              mounted ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"
+            }`}
+            style={{ transitionDelay: mounted ? "260ms" : "0ms" }}
+          >
             <div className="relative rounded-3xl p-6 bg-gradient-to-br from-black/50 to-purple-900/20 ring-1 ring-pink-900/18 shadow-xl backdrop-blur-sm">
               <h4 className="text-sm text-pink-300 font-medium mb-4">
                 Core Skills
@@ -118,10 +129,17 @@ export default function About() {
 
               {/* polished skills grid */}
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                {SKILLS.map((s) => (
+                {SKILLS.map((s, idx) => (
                   <div
                     key={s}
-                    className="flex items-center gap-3 px-3 py-2 rounded-xl bg-black/25 ring-1 ring-pink-900/10 hover:scale-105 transform transition"
+                    className={`flex items-center gap-3 px-3 py-2 rounded-xl bg-black/25 ring-1 ring-pink-900/10 transform transition
+                                hover:scale-105`}
+                    style={{
+                      transitionDuration: "400ms",
+                      transitionDelay: mounted ? `${300 + idx * 40}ms` : "0ms",
+                      opacity: mounted ? 1 : 0,
+                      transform: mounted ? "translateY(0)" : "translateY(8px)",
+                    }}
                   >
                     <SkillIcon />
                     <span className="text-sm text-gray-100">{s}</span>
@@ -135,7 +153,7 @@ export default function About() {
                 </h4>
                 <ul className="text-sm text-gray-300 space-y-2">
                   <li>
-                    <span className="font-semibold text-white">B.Com</span> —
+                    <span className="font-semibold text-white">B.Com</span> —{" "}
                     Gurugram University
                   </li>
                   <li>Senior Secondary & Secondary — HBSE</li>

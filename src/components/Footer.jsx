@@ -1,22 +1,15 @@
 // src/components/Footer.jsx
 import React from "react";
 
-/**
- * Luxury Footer — frosted glass, gradient accents, social icons (SVG),
- * responsive: 1 / 2 / 4 columns (mobile / tablet / desktop).
- *
- * Pass onContactClick prop to open contact modal (used for Email).
- */
-
 export default function Footer({ onContactClick }) {
   return (
     <footer
       className="
-    mt-16 py-12
-    bg-gradient-to-b from-[#0d0b12] to-[#1a1722]
-    border-t border-purple-500/20
-    text-gray-200
-  "
+        mt-16 py-12
+        bg-gradient-to-b from-[#0d0b12] to-[#1a1722]
+        border-t border-purple-500/20
+        text-gray-200
+      "
       aria-labelledby="footer-heading"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -25,7 +18,7 @@ export default function Footer({ onContactClick }) {
           <a href="#home" className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-lg overflow-hidden ring-1 ring-purple-400/40 shadow-md">
               <img
-                src="logo.png"
+                src="logo.png" // or /assets/logo.png depending on your setup
                 alt="logo"
                 className="w-full h-full object-cover"
               />
@@ -42,11 +35,11 @@ export default function Footer({ onContactClick }) {
             <a
               href="#projects"
               className="
-            px-4 py-2 rounded-full
-            bg-gradient-to-r from-purple-600 to-pink-500
-            text-white text-sm shadow
-            hover:scale-105 transition
-          "
+                px-4 py-2 rounded-full
+                bg-gradient-to-r from-purple-600 to-pink-500
+                text-white text-sm shadow
+                hover:scale-105 transition
+              "
             >
               View Projects
             </a>
@@ -54,13 +47,13 @@ export default function Footer({ onContactClick }) {
             <button
               onClick={onContactClick}
               className="
-            px-4 py-2 rounded-full
-            bg-white/10 
-            border border-purple-300/30
-            text-gray-200 text-sm
-            hover:bg-white/20
-            transition
-          "
+                px-4 py-2 rounded-full
+                bg-white/10 
+                border border-purple-300/30
+                text-gray-200 text-sm
+                hover:bg-white/20
+                transition
+              "
             >
               Contact
             </button>
@@ -131,54 +124,54 @@ export default function Footer({ onContactClick }) {
             <h4 className="text-sm font-semibold text-white mb-3">Connect</h4>
 
             <div className="flex flex-col gap-4">
+              {/* WhatsApp */}
               <div className="flex items-center gap-3">
                 <SocialIconWhatsapp />
                 <a
-                  href="#"
+                  href="https://wa.me/919810298566"
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-sm text-gray-200 hover:text-purple-400"
                 >
-                  WhatsApp
+                  WhatsApp: +91 9810298566
                 </a>
               </div>
 
+              {/* GitHub */}
               <div className="flex items-center gap-3">
                 <SocialIconGithub />
                 <a
-                  href="#"
+                  href="https://github.com/kt-pixels/"
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-sm text-gray-200 hover:text-purple-400"
                 >
                   GitHub
                 </a>
               </div>
 
-              <div className="flex items-center gap-3">
-                <SocialIconNaukri />
-                <a
-                  href="#"
-                  className="text-sm text-gray-200 hover:text-purple-400"
-                >
-                  Naukri
-                </a>
-              </div>
-
+              {/* LinkedIn */}
               <div className="flex items-center gap-3">
                 <SocialIconLinkedin />
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/kirtan-kaushik-71a901324/"
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-sm text-gray-200 hover:text-purple-400"
                 >
                   LinkedIn
                 </a>
               </div>
 
+              {/* Email */}
               <div className="flex items-center gap-3">
                 <SocialIconMail />
-                <button
-                  onClick={onContactClick}
+                <a
+                  href="mailto:kirtankaushik45@gmail.com"
                   className="text-sm text-gray-200 hover:text-purple-400 underline"
                 >
-                  Email
-                </button>
+                  kirtankaushik45@gmail.com
+                </a>
               </div>
             </div>
 
@@ -218,7 +211,7 @@ function SocialIconWhatsapp() {
 function SocialIconGithub() {
   return (
     <svg
-      className="w-6 h-6 text-gray-900 flex-shrink-0"
+      className="w-6 h-6 text-gray-200 flex-shrink-0"
       viewBox="0 0 24 24"
       fill="none"
       aria-hidden
@@ -231,27 +224,10 @@ function SocialIconGithub() {
   );
 }
 
-function SocialIconNaukri() {
-  // Naukri doesn't have a universal SVG here; using a briefcase / job icon as placeholder
-  return (
-    <svg
-      className="w-6 h-6 text-yellow-600 flex-shrink-0"
-      viewBox="0 0 24 24"
-      fill="none"
-      aria-hidden
-    >
-      <path
-        d="M3 7a2 2 0 012-2h3V4a2 2 0 012-2h4a2 2 0 012 2v1h3a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
 function SocialIconLinkedin() {
   return (
     <svg
-      className="w-6 h-6 text-blue-600 flex-shrink-0"
+      className="w-6 h-6 text-blue-500 flex-shrink-0"
       viewBox="0 0 24 24"
       fill="none"
       aria-hidden
@@ -267,7 +243,7 @@ function SocialIconLinkedin() {
 function SocialIconMail() {
   return (
     <svg
-      className="w-6 h-6 text-red-500 flex-shrink-0"
+      className="w-6 h-6 text-red-400 flex-shrink-0"
       viewBox="0 0 24 24"
       fill="none"
       aria-hidden
