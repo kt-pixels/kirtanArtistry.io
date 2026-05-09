@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 980" role="img" aria-labelledby="title desc">
+  <title id="title">Futuristic profile identity for Kirtan Kaushik</title>
+  <desc id="desc">An abstract professional developer portrait with holographic gradients, glass surfaces, and interface overlays.</desc>
+  <defs>
+    <linearGradient id="frame" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#67dcff"/>
+      <stop offset="48%" stop-color="#88ffe0"/>
+      <stop offset="100%" stop-color="#9f84ff"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.22)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.03)"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="35%" r="52%">
+      <stop offset="0%" stop-color="#9ee7ff" stop-opacity="0.95"/>
+      <stop offset="52%" stop-color="#55c3ff" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#090d1d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bgGlow" cx="50%" cy="20%" r="78%">
+      <stop offset="0%" stop-color="#182443"/>
+      <stop offset="40%" stop-color="#0e1630"/>
+      <stop offset="100%" stop-color="#060915"/>
+    </radialGradient>
+    <linearGradient id="strokeLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#67dcff" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#67dcff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#9f84ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="860" height="980" rx="64" fill="#050915"/>
+  <rect x="18" y="18" width="824" height="944" rx="52" fill="url(#bgGlow)" stroke="url(#frame)" stroke-opacity="0.32" stroke-width="2"/>
+
+  <g opacity="0.16">
+    <path d="M90 142H770" stroke="url(#strokeLine)" stroke-width="2"/>
+    <path d="M90 188H612" stroke="url(#strokeLine)" stroke-width="2"/>
+    <path d="M90 770H770" stroke="url(#strokeLine)" stroke-width="2"/>
+    <path d="M90 816H540" stroke="url(#strokeLine)" stroke-width="2"/>
+    <circle cx="132" cy="132" r="4" fill="#67dcff"/>
+    <circle cx="728" cy="132" r="4" fill="#9f84ff"/>
+    <circle cx="132" cy="848" r="4" fill="#88ffe0"/>
+    <circle cx="728" cy="848" r="4" fill="#67dcff"/>
+  </g>
+
+  <circle cx="430" cy="348" r="192" fill="url(#halo)"/>
+  <circle cx="430" cy="348" r="244" fill="none" stroke="#67dcff" stroke-opacity="0.12" stroke-width="2"/>
+  <circle cx="430" cy="348" r="284" fill="none" stroke="#9f84ff" stroke-opacity="0.12" stroke-width="2"/>
+
+  <g transform="translate(130 130)">
+    <rect x="0" y="0" width="600" height="720" rx="44" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+    <rect x="20" y="20" width="560" height="680" rx="34" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1.5"/>
+
+    <g opacity="0.55">
+      <rect x="44" y="44" width="124" height="34" rx="17" fill="rgba(255,255,255,0.08)"/>
+      <text x="70" y="67" fill="#c9f2ff" font-family="Arial, sans-serif" font-size="14" letter-spacing="4">PROFILE</text>
+    </g>
+
+    <g>
+      <ellipse cx="302" cy="256" rx="118" ry="138" fill="#111a35"/>
+      <ellipse cx="302" cy="248" rx="106" ry="124" fill="#162345"/>
+      <path d="M214 262C214 195 255 136 302 136C349 136 390 195 390 262C390 314 364 364 302 364C240 364 214 314 214 262Z" fill="#1f2e58"/>
+      <path d="M226 278C232 230 260 188 302 188C344 188 372 230 378 278C372 320 346 340 302 340C258 340 232 320 226 278Z" fill="#283a70"/>
+      <path d="M280 254C288 246 296 244 302 244C308 244 316 246 324 254" fill="none" stroke="#9fd8ff" stroke-opacity="0.55" stroke-width="3" stroke-linecap="round"/>
+      <path d="M286 286C294 292 310 292 318 286" fill="none" stroke="#88ffe0" stroke-opacity="0.45" stroke-width="3" stroke-linecap="round"/>
+      <path d="M236 406C258 378 282 364 302 364C322 364 346 378 368 406C392 436 410 480 414 540H190C194 480 212 436 236 406Z" fill="#182449"/>
+      <path d="M214 540C220 468 250 426 302 426C354 426 384 468 390 540" fill="none" stroke="#67dcff" stroke-opacity="0.26" stroke-width="3"/>
+      <path d="M248 442C266 462 282 472 302 472C322 472 338 462 356 442" fill="none" stroke="#9f84ff" stroke-opacity="0.35" stroke-width="3"/>
+    </g>
+
+    <g opacity="0.72">
+      <rect x="404" y="182" width="128" height="90" rx="22" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+      <text x="430" y="214" fill="#bfefff" font-family="Arial, sans-serif" font-size="13" letter-spacing="3">SYSTEM</text>
+      <text x="430" y="242" fill="#ffffff" font-family="Arial, sans-serif" font-size="22" font-weight="700">KK / ACTIVE</text>
+      <rect x="430" y="254" width="72" height="6" rx="3" fill="#67dcff" fill-opacity="0.8"/>
+    </g>
+
+    <g opacity="0.58">
+      <rect x="84" y="452" width="120" height="90" rx="20" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+      <text x="106" y="488" fill="#cbf8ff" font-family="Arial, sans-serif" font-size="13" letter-spacing="3">ROLE</text>
+      <text x="106" y="516" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="700">UI / AI</text>
+    </g>
+
+    <g opacity="0.34">
+      <path d="M92 602H504" stroke="url(#strokeLine)" stroke-width="2"/>
+      <path d="M92 624H448" stroke="url(#strokeLine)" stroke-width="2"/>
+      <path d="M92 646H356" stroke="url(#strokeLine)" stroke-width="2"/>
+    </g>
+  </g>
+
+  <g opacity="0.42">
+    <rect x="76" y="882" width="188" height="42" rx="21" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+    <text x="114" y="909" fill="#c5f7ff" font-family="Arial, sans-serif" font-size="14" letter-spacing="4">KIRTAN KAUSHIK</text>
+  </g>
+</svg>

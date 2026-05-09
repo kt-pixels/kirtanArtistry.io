@@ -1,68 +1,844 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
-    <!-- Title -->
-    <title>
-      Kirtan Kaushik | Web Developer & Trainer | React.js Specialist
-    </title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="logo.png" />
-
-    <!-- Viewport (Mobile Responsive) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Description for SEO -->
     <meta
       name="description"
-      content="Portfolio of Kirtan Kaushik — Web Developer & Trainer specializing in React.js, Node.js, MongoDB, UI/UX, API integration, and modern web development."
+      content="Kirtan Kaushik creates premium full-stack and AI-powered digital experiences with cinematic interfaces, futuristic interactions, and recruiter-ready product thinking."
     />
-
-    <!-- Keywords for SEO -->
     <meta
       name="keywords"
-      content="Kirtan Kaushik, Web Developer, React Developer, Trainer, Portfolio, JavaScript Developer, MERN Stack, Frontend Developer, Node.js, MongoDB, Brilliant Institute of Technology"
+      content="Kirtan Kaushik, Full Stack Developer, Frontend Developer, AI Enthusiast, Creative Developer, Software Engineer, portfolio"
     />
-
-    <!-- Author -->
     <meta name="author" content="Kirtan Kaushik" />
-
-    <!-- Open Graph for social media previews -->
+    <meta name="theme-color" content="#060816" />
+    <meta name="color-scheme" content="dark light" />
     <meta
       property="og:title"
-      content="Kirtan Kaushik | Web Developer & Trainer"
+      content="Kirtan Kaushik | Futuristic Creative Developer Portfolio"
     />
     <meta
       property="og:description"
-      content="Professional portfolio showcasing modern web development projects, skills, certifications, and training experience."
+      content="A cinematic portfolio interface blending full-stack engineering, premium UI/UX, AI thinking, and immersive frontend motion."
     />
-    <meta property="og:image" content="logo.png" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://kirtankaushik.netlify.app" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Kirtan Kaushik | Web Developer & Trainer"
+    <meta property="og:locale" content="en_US" />
+    <title>Kirtan Kaushik | Futuristic Portfolio Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="assets/profile-identity.svg"
+      as="image"
+      type="image/svg+xml"
     />
-    <meta
-      name="twitter:description"
-      content="React.js Developer & Trainer with expertise in modern UI development and production-grade applications."
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
     />
-    <meta name="twitter:image" content="logo.png" />
-
-    <!-- Robots SEO -->
-    <meta name="robots" content="index, follow" />
-
-    <!-- Theme Color (Browser UI color) -->
-    <meta name="theme-color" content="#8b5cf6" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Kirtan Kaushik",
+        "jobTitle": "Full Stack Developer",
+        "email": "mailto:kirtankaushik45@gmail.com",
+        "telephone": "+91-9810298566",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Haryana",
+          "addressCountry": "India"
+        },
+        "knowsAbout": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "React",
+          "Next.js",
+          "Node.js",
+          "MongoDB",
+          "Three.js",
+          "GSAP",
+          "Prompt Engineering",
+          "Generative AI"
+        ]
+      }
+    </script>
   </head>
+  <body data-theme="dark" data-accent="blue">
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="background-layer" aria-hidden="true">
+      <div class="noise"></div>
+      <div class="grid-overlay"></div>
+      <div class="aurora aurora-one"></div>
+      <div class="aurora aurora-two"></div>
+      <div class="aurora aurora-three"></div>
+    </div>
+
+    <div class="progress-bar" aria-hidden="true">
+      <span></span>
+    </div>
+
+    <div class="cursor cursor-ring" aria-hidden="true"></div>
+    <div class="cursor cursor-dot" aria-hidden="true"></div>
+    <div class="trail-layer" aria-hidden="true"></div>
+    <div class="page-transition" aria-hidden="true"></div>
+
+    <div class="loader" aria-live="polite">
+      <div class="loader__inner glass-panel">
+        <p class="loader__eyebrow">Booting Portfolio OS</p>
+        <h1>Kirtan Kaushik</h1>
+        <div class="loader__bar">
+          <span></span>
+        </div>
+        <div class="loader__meta">
+          <span data-loader-stage>Calibrating interface</span>
+          <span data-loader-count>00</span>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <a class="brand magnetic" href="#home" aria-label="Go to home">
+        <span class="brand__mark">
+          <img
+            src="assets/profile-identity.svg"
+            alt="Kirtan Kaushik profile avatar"
+            width="48"
+            height="48"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </span>
+        <span class="brand__copy">
+          <strong>Portfolio OS</strong>
+          <small>Creative Engineering Interface</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#github">GitHub</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="site-header__actions">
+        <button
+          class="icon-button magnetic"
+          type="button"
+          data-theme-toggle
+          aria-label="Toggle color theme"
+        >
+          Theme
+        </button>
+        <button
+          class="icon-button magnetic"
+          type="button"
+          data-sound-toggle
+          aria-label="Toggle interface sound"
+        >
+          Sound
+        </button>
+      </div>
+
+      <button
+        class="mobile-nav-toggle magnetic"
+        type="button"
+        data-mobile-nav-toggle
+        aria-label="Open navigation menu"
+        aria-controls="mobile-nav"
+        aria-expanded="false"
+      >
+        <span class="mobile-nav-toggle__bars" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <span class="mobile-nav-toggle__label"></span>
+      </button>
+    </header>
+
+    <div class="mobile-nav-overlay" data-mobile-nav-overlay hidden></div>
+    <aside class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav__panel glass-panel">
+        <div class="mobile-nav__header">
+          <div class="mobile-nav__brand">
+            <span class="brand__mark">
+              <img
+                src="assets/profile-identity.svg"
+                alt="Kirtan Kaushik mobile avatar"
+                width="48"
+                height="48"
+                loading="lazy"
+                decoding="async"
+              />
+            </span>
+            <div>
+              <strong>Portfolio OS</strong>
+              <small>Premium mobile interface</small>
+            </div>
+          </div>
+
+          <button
+            class="mobile-nav__close magnetic"
+            type="button"
+            data-mobile-nav-close
+            aria-label="Close navigation menu"
+          >
+            X
+          </button>
+        </div>
+
+        <nav class="mobile-nav__links" aria-label="Mobile navigation">
+          <a class="mobile-nav__link magnetic" href="#about">About</a>
+          <a class="mobile-nav__link magnetic" href="#skills">Skills</a>
+          <a class="mobile-nav__link magnetic" href="#projects">Projects</a>
+          <a class="mobile-nav__link magnetic" href="#experience">Experience</a>
+          <a class="mobile-nav__link magnetic" href="#github">GitHub</a>
+          <a class="mobile-nav__link magnetic" href="#contact">Contact</a>
+        </nav>
+
+        <div class="mobile-nav__actions">
+          <button
+            class="icon-button magnetic"
+            type="button"
+            data-theme-toggle
+            aria-label="Toggle color theme"
+          >
+            Theme
+          </button>
+          <button
+            class="icon-button magnetic"
+            type="button"
+            data-sound-toggle
+            aria-label="Toggle interface sound"
+          >
+            Sound
+          </button>
+          <a
+            class="button magnetic"
+            href="resume.html"
+            download="Kirtan-Kaushik-Resume.html"
+            >Download Resume</a
+          >
+        </div>
+
+        <div class="mobile-nav__socials" data-mobile-socials></div>
+      </div>
+    </aside>
+
+    <main id="main-content">
+      <section class="section hero" id="home" data-accent="blue">
+        <div class="hero__canvas-wrap" aria-hidden="true">
+          <canvas id="hero-canvas"></canvas>
+        </div>
+
+        <div class="hero__atmosphere" aria-hidden="true">
+          <span class="hero__beam hero__beam--one"></span>
+          <span class="hero__beam hero__beam--two"></span>
+          <span class="hero__beam hero__beam--three"></span>
+        </div>
+
+        <div class="container hero__layout">
+          <div class="hero__content">
+            <p class="section-kicker">
+              Full Stack Developer / Frontend Developer / AI Enthusiast
+            </p>
+
+            <div class="hero__copy">
+              <span class="hud-badge">Immersive Digital Identity</span>
+              <div class="hero__identity-chip">
+                <div class="hero__identity-avatar">
+                  <img
+                    src="assets/profile-identity.svg"
+                    alt="Kirtan Kaushik compact profile image"
+                    width="64"
+                    height="64"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div>
+                  <span>Recruiter-first presence</span>
+                  <strong
+                    >Creative developer with premium product instincts</strong
+                  >
+                </div>
+              </div>
+              <h1 data-reveal>Kirtan Kaushik</h1>
+              <h2 class="hero__tagline" data-tagline data-reveal></h2>
+              <p class="hero__description" data-bio></p>
+            </div>
+
+            <div class="hero__trust-strip">
+              <div class="hero__role-marquee glass-strip">
+                <span>Current focus</span>
+                <strong data-rotating-role></strong>
+              </div>
+              <a
+                class="button button--ghost magnetic button--compact"
+                href="resume.html"
+                download="Kirtan-Kaushik-Resume.html"
+                >Download Resume</a
+              >
+            </div>
+
+            <div class="hero__cta">
+              <a class="button magnetic" href="#projects">Explore Projects</a>
+              <a class="button button--ghost magnetic" href="#contact"
+                >Start a Conversation</a
+              >
+            </div>
+
+            <div class="hero__stats" data-metrics></div>
+          </div>
+
+          <div class="hero__stage">
+            <article class="hero__profile glass-panel tilt-card">
+              <div class="hero__profile-media">
+                <div class="hero__profile-frame">
+                  <span class="hero__profile-ring"></span>
+                  <span
+                    class="hero__profile-ring hero__profile-ring--two"
+                  ></span>
+                  <span
+                    class="hero__profile-ring hero__profile-ring--three"
+                  ></span>
+                  <img
+                    class="profile-image profile-image--hero"
+                    src="assets/profile-identity.svg"
+                    alt="Futuristic profile portrait for Kirtan Kaushik"
+                    width="420"
+                    height="480"
+                    decoding="async"
+                    fetchpriority="high"
+                  />
+                </div>
+                <div class="hero__profile-scan"></div>
+              </div>
+
+              <div class="hero__profile-copy">
+                <span class="panel-tag">Profile Signal</span>
+                <strong
+                  >Creative engineering, product storytelling, and modern
+                  systems thinking in one recruiter-ready presence.</strong
+                >
+                <p>
+                  Polished for first impressions, built for deeper technical
+                  credibility.
+                </p>
+              </div>
+            </article>
+
+            <div
+              class="hero-slider glass-panel tilt-card"
+              aria-label="Hero capability slider"
+            >
+              <div class="hero-slider__head">
+                <div>
+                  <span class="panel-tag">Capability Sequence</span>
+                  <p class="hero-slider__status" data-slide-status>
+                    Slide 01 / 04
+                  </p>
+                </div>
+
+                <div class="hero-slider__controls">
+                  <button
+                    class="slider-control magnetic"
+                    type="button"
+                    data-slide-action="prev"
+                    aria-label="Show previous slide"
+                  >
+                    Prev
+                  </button>
+                  <button
+                    class="slider-control magnetic"
+                    type="button"
+                    data-slide-action="next"
+                    aria-label="Show next slide"
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+
+              <div class="hero-slider__viewport">
+                <div class="hero-slider__track" data-hero-slider></div>
+              </div>
+
+              <div class="hero-slider__footer">
+                <p class="hero-slider__description" data-slide-description></p>
+                <div class="hero-slider__footer-row">
+                  <div class="hero-slider__chips" data-slide-tags></div>
+                  <div
+                    class="hero-slider__pagination"
+                    data-slide-dots
+                    aria-label="Hero slider pagination"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <aside
+              class="hero__console glass-panel tilt-card"
+              aria-label="AI talent signal panel"
+            >
+              <div class="console__header">
+                <span class="console__label">AI Talent Interface</span>
+                <span class="console__status">Recruiter mode active</span>
+              </div>
+
+              <div class="console__signal">
+                <div class="signal-orb"></div>
+                <div>
+                  <p>Signal strength</p>
+                  <strong>Creative systems + engineering execution</strong>
+                </div>
+              </div>
+
+              <div class="console__grid">
+                <article>
+                  <span>01</span>
+                  <strong>Immersive frontend thinking</strong>
+                </article>
+                <article>
+                  <span>02</span>
+                  <strong>Full-stack product mindset</strong>
+                </article>
+                <article>
+                  <span>03</span>
+                  <strong>AI workflow curiosity</strong>
+                </article>
+                <article>
+                  <span>04</span>
+                  <strong>Performance-first execution</strong>
+                </article>
+              </div>
+
+              <div class="console__stream">
+                <p>Live systems</p>
+                <ul data-console-stream></ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+
+        <div class="scroll-prompt">
+          <span></span>
+          <p>Scroll to enter the experience</p>
+        </div>
+      </section>
+
+      <section class="section" id="about" data-accent="violet">
+        <div class="container section-shell">
+          <div class="section-heading">
+            <p class="section-kicker">Storytelling / About</p>
+            <h2 data-reveal>
+              The human side of high-performance product building.
+            </h2>
+            <p>
+              Technology feels more powerful when it also feels emotional,
+              clear, and beautifully engineered.
+            </p>
+          </div>
+
+          <div class="about__grid">
+            <article
+              class="glass-panel story-card story-card--identity tilt-card"
+            >
+              <span class="panel-tag">Identity</span>
+              <div class="story-card__identity">
+                <div class="profile-badge">
+                  <img
+                    class="profile-image profile-image--about"
+                    src="assets/profile-identity.svg"
+                    alt="Kirtan Kaushik profile image"
+                    width="240"
+                    height="240"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div>
+                  <h3>Kirtan Kaushik</h3>
+                  <p>
+                    Full-stack builder with a cinematic frontend edge and a
+                    systems-driven product mindset.
+                  </p>
+                </div>
+              </div>
+              <p data-story></p>
+              <div class="story-card__chips">
+                <span>Frontend Systems</span>
+                <span>AI Workflows</span>
+                <span>Interaction Design</span>
+              </div>
+            </article>
+
+            <article class="glass-panel story-card tilt-card">
+              <span class="panel-tag">Vision</span>
+              <h3>How Kirtan approaches the future</h3>
+              <div class="focus-list" data-focus-points></div>
+            </article>
+
+            <article class="glass-panel quote-card tilt-card">
+              <span class="panel-tag">Philosophy</span>
+              <blockquote>
+                Great software should not only solve problems. It should make
+                people feel momentum, clarity, and possibility.
+              </blockquote>
+              <p>
+                Built for recruiters who value both imagination and execution.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills" data-accent="cyan">
+        <div class="container section-shell">
+          <div class="section-heading">
+            <p class="section-kicker">Skill Matrix</p>
+            <h2 data-reveal>
+              An interactive stack designed for shipping premium web
+              experiences.
+            </h2>
+            <p>
+              Frontend craft, backend reliability, AI readiness, and product
+              intuition working as one system.
+            </p>
+          </div>
+
+          <div class="skills__layout">
+            <article class="glass-panel skill-orbit tilt-card">
+              <span class="panel-tag">Orbiting capabilities</span>
+              <div class="skill-orbit__core">
+                <p>Core Engine</p>
+                <strong>Creative + Scalable + Intelligent</strong>
+              </div>
+              <div class="skill-orbit__rings" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="skill-orbit__items" data-skill-orbit></div>
+            </article>
+
+            <div class="skills__panels" data-skill-groups></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" data-accent="sunset">
+        <div class="container section-shell">
+          <div class="section-heading">
+            <p class="section-kicker">Featured Launches</p>
+            <h2 data-reveal>
+              Projects presented like futuristic product releases.
+            </h2>
+            <p>
+              Each project card is generated dynamically, layered with depth,
+              motion, and a strong product story.
+            </p>
+          </div>
+
+          <div class="projects__grid" data-project-grid></div>
+        </div>
+      </section>
+
+      <section class="section" id="experience" data-accent="mint">
+        <div class="container section-shell">
+          <div class="section-heading">
+            <p class="section-kicker">Experience Signals</p>
+            <h2 data-reveal>
+              A luxury timeline of readiness, ambition, and builder energy.
+            </h2>
+            <p>
+              Structured to tell a recruiter where the momentum is already
+              strong and where the next leap can happen fast.
+            </p>
+          </div>
+
+          <div class="counter-row" data-counters></div>
+          <div class="timeline" data-timeline></div>
+        </div>
+      </section>
+
+      <section class="section" id="github" data-accent="blue">
+        <div class="container section-shell">
+          <div class="section-heading">
+            <p class="section-kicker">GitHub Telemetry</p>
+            <h2 data-reveal>
+              Live coding signals, repository activity, and language
+              distribution.
+            </h2>
+            <p>
+              The dashboard is wired for dynamic GitHub data and gracefully
+              falls back when the username is still being configured.
+            </p>
+          </div>
+
+          <div class="github__layout">
+            <article class="glass-panel github__overview tilt-card">
+              <div class="github__overview-head">
+                <span class="panel-tag">Live Sync</span>
+                <span class="sync-badge" data-github-status
+                  >Awaiting GitHub username</span
+                >
+              </div>
+              <div class="github__stats" data-github-stats></div>
+              <div class="language-bars" data-language-bars></div>
+            </article>
+
+            <article class="glass-panel github__graph">
+              <div class="graph__head">
+                <span class="panel-tag">Contribution Signal</span>
+                <p>Instantly swappable with your live username.</p>
+              </div>
+              <div class="graph-frame" data-github-graph></div>
+            </article>
+
+            <article class="glass-panel github__repos tilt-card">
+              <div class="graph__head">
+                <span class="panel-tag">Repository Stream</span>
+                <p>Featured work and codebase activity appear here.</p>
+              </div>
+              <div class="repo-list" data-repo-list></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" data-accent="violet">
+        <div class="container section-shell">
+          <div class="section-heading">
+            <p class="section-kicker">Contact Interface</p>
+            <h2 data-reveal>
+              Make the final interaction feel as premium as the first.
+            </h2>
+            <p>
+              Built with responsive validation, subtle motion feedback, and a
+              clean handoff into email.
+            </p>
+          </div>
+
+          <div class="contact__layout">
+            <article class="glass-panel contact__info tilt-card">
+              <span class="panel-tag">Direct channels</span>
+              <h3>
+                Available for high-impact teams, internships, freelance builds,
+                and future-focused collaborations.
+              </h3>
+
+              <div class="contact__meta">
+                <a
+                  class="contact-chip magnetic"
+                  href="mailto:kirtankaushik45@gmail.com"
+                >
+                  <span>Email</span>
+                  <strong>kirtankaushik45@gmail.com</strong>
+                </a>
+                <a class="contact-chip magnetic" href="tel:+919810298566">
+                  <span>Phone</span>
+                  <strong>+91 9810298566</strong>
+                </a>
+                <div class="contact-chip">
+                  <span>Location</span>
+                  <strong>Haryana, India</strong>
+                </div>
+              </div>
+
+              <div class="social-grid" data-social-links></div>
+            </article>
+
+            <form
+              class="glass-panel contact__form"
+              id="contact-form"
+              novalidate
+            >
+              <span class="panel-tag">Send a signal</span>
+              <div class="field-grid">
+                <label class="field">
+                  <span>Name</span>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                  />
+                </label>
+                <label class="field">
+                  <span>Email</span>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                  />
+                </label>
+              </div>
+
+              <div class="field-grid">
+                <label class="field">
+                  <span>Company</span>
+                  <input
+                    type="text"
+                    name="company"
+                    placeholder="Company or team"
+                  />
+                </label>
+                <label class="field">
+                  <span>Project type</span>
+                  <select name="projectType">
+                    <option value="Role opportunity">Role opportunity</option>
+                    <option value="Freelance project">Freelance project</option>
+                    <option value="Partnership">Partnership</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </label>
+              </div>
+
+              <label class="field field--large">
+                <span>Message</span>
+                <textarea
+                  name="message"
+                  rows="6"
+                  placeholder="Tell me about the role, team, or product challenge."
+                  required
+                ></textarea>
+              </label>
+
+              <div class="form__actions">
+                <button class="button magnetic" type="submit">
+                  Launch Contact Sequence
+                </button>
+                <p class="form__status" data-form-status aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__atmosphere" aria-hidden="true">
+        <div class="site-footer__gridlines"></div>
+        <div class="site-footer__glow site-footer__glow--one"></div>
+        <div class="site-footer__glow site-footer__glow--two"></div>
+        <div class="site-footer__glow site-footer__glow--three"></div>
+        <div class="site-footer__particles" data-footer-particles></div>
+      </div>
+
+      <div class="container site-footer__shell glass-panel">
+        <div class="site-footer__top">
+          <div class="site-footer__brand-block">
+            <div class="site-footer__avatar">
+              <img
+                class="profile-image profile-image--footer"
+                src="assets/profile-identity.svg"
+                alt="Kirtan Kaushik footer profile image"
+                width="160"
+                height="160"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="site-footer__brand-copy">
+              <span class="section-kicker">Kirtan Kaushik / Portfolio OS</span>
+              <h2>
+                Engineering digital experiences with cinematic clarity and
+                recruiter-ready confidence.
+              </h2>
+              <p data-footer-tagline></p>
+
+              <div class="site-footer__actions">
+                <a
+                  class="button magnetic"
+                  href="resume.html"
+                  download="Kirtan-Kaushik-Resume.html"
+                  >Download Resume</a
+                >
+                <a class="button button--ghost magnetic" href="#contact"
+                  >Book a Conversation</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="site-footer__link-grid">
+            <div class="footer-column">
+              <span class="panel-tag">Navigation</span>
+              <a class="footer-nav-link magnetic" href="#about">About</a>
+              <a class="footer-nav-link magnetic" href="#skills">Skills</a>
+              <a class="footer-nav-link magnetic" href="#projects">Projects</a>
+              <a class="footer-nav-link magnetic" href="#experience"
+                >Experience</a
+              >
+              <a class="footer-nav-link magnetic" href="#github">GitHub</a>
+              <a class="footer-nav-link magnetic" href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-column">
+              <span class="panel-tag">Social</span>
+              <div class="footer-socials" data-footer-socials></div>
+            </div>
+
+            <div class="footer-column">
+              <span class="panel-tag">Direct Contact</span>
+              <a
+                class="footer-detail magnetic"
+                href="mailto:kirtankaushik45@gmail.com"
+                >kirtankaushik45@gmail.com</a
+              >
+              <a class="footer-detail magnetic" href="tel:+919810298566"
+                >+91 9810298566</a
+              >
+              <span class="footer-detail footer-detail--static"
+                >Haryana, India</span
+              >
+              <a
+                class="footer-detail magnetic"
+                href="resume.html"
+                download="Kirtan-Kaushik-Resume.html"
+                >Resume Download</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="site-footer__bottom">
+          <p>
+            © <span data-year></span> Kirtan Kaushik. Crafted as a premium
+            recruiter-facing digital identity.
+          </p>
+          <a class="footer-link magnetic" href="#home">Return to top</a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r160/three.min.js"
+    ></script>
+    <script defer src="script.js"></script>
   </body>
 </html>
