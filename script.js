@@ -2,240 +2,299 @@ const portfolioData = {
   profile: {
     name: "Kirtan Kaushik",
     roles: [
-      "Full Stack Developer",
-      "Frontend Developer",
-      "AI Enthusiast",
-      "Creative Developer",
-      "Software Engineer",
+      "Cloud and Fullstack Developer",
+      "Data Analyst & Cloud Computing Trainer",
+      "Full Stack Web Developer & Trainer",
+      "Microsoft Azure Fundamentals",
     ],
     image: "assets/profile-identity.svg",
-    resume: "resume.html",
+    resume: "assets/Kirtan-Kaushik-Resume.pdf",
     footerTagline:
-      "A future-facing portfolio interface blending cinematic frontend craft, full-stack execution, and recruiter-first clarity.",
+      "Resume-backed portfolio for web development, data analytics, and Microsoft Azure cloud roles.",
     tagline:
-      "Crafting cinematic interfaces, high-performance products, and AI-infused digital systems that feel like the next era of the web.",
-    bio: "Kirtan Kaushik blends full-stack engineering, premium frontend craft, and AI-driven curiosity to build digital experiences that are fast, expressive, and deeply product-minded. His focus is creating interfaces that feel unforgettable while staying grounded in performance, clarity, and real-world usability.",
+      "Cloud and Fullstack Developer focused on web development, data analytics training, and Microsoft Azure fundamentals.",
+    bio: "Motivated technology trainer with knowledge of Data Analytics and Cloud Computing fundamentals. Skilled in Python, SQL, Excel, Power BI, and Microsoft Azure basics. Familiar with cloud monitoring, backup, patching, VM provisioning, and basic Active Directory tasks. Quick learner with strong analytical and problem-solving skills.",
     story:
-      "Kirtan approaches development like experience design: every layout, transition, interaction, and performance choice should communicate intent. The goal is not to make things look flashy for a moment, but to create products that feel precise, futuristic, and trustworthy from the first scroll to the final click.",
+      "Kirtan's resume shows hands-on training across frontend development, backend development, data analytics, database systems, Microsoft Office tools, and Microsoft Azure cloud fundamentals.",
   },
   heroSlides: [
     {
-      title: "Full Stack Development",
-      eyebrow: "Developer Ecosystem",
-      copy: "From interface choreography to application architecture, the stack is treated as one connected product system.",
+      title: "Web Development",
+      eyebrow: "Full Stack Training",
+      copy: "Training experience across HTML, CSS, JavaScript, React.js, Python, Django, Node.js, MySQL, and MongoDB.",
       summary:
-        "Modern UI engineering, component thinking, APIs, and product execution designed to signal high-leverage developer maturity.",
+        "Frontend, backend, REST API, and database skills presented with recruiter-friendly clarity.",
       accent: "blue",
       visual: "code",
-      tags: ["Frontend Systems", "Node Architecture", "API Design"],
+      tags: ["HTML", "CSS", "JavaScript", "React.js", "Django"],
+    },
+    {
+      title: "Data Analytics",
+      eyebrow: "Analytics Trainer",
+      copy: "Training students in Python, Pandas, NumPy, SQL, Excel, and Power BI for data cleaning, analysis, and dashboards.",
+      summary:
+        "Resume-backed analytics capability across dashboards, SQL queries, reporting, and real-world datasets.",
+      accent: "cyan",
+      visual: "ai",
+      tags: ["Python", "Pandas", "NumPy", "SQL", "Power BI"],
     },
     {
       title: "Cloud Computing",
-      eyebrow: "Infrastructure Thinking",
-      copy: "Scalable delivery is visualized as a living network: clean deployment paths, dependable services, and resilient product foundations.",
+      eyebrow: "Microsoft Azure",
+      copy: "Familiar with Azure VM creation, monitoring, backup, patch management, cloud infrastructure concepts, and basic Active Directory tasks.",
       summary:
-        "Cloud-inspired service thinking that communicates reliability, readiness, and modern digital infrastructure awareness.",
-      accent: "cyan",
-      visual: "cloud",
-      tags: ["Deployment Fluency", "Service Layers", "Network Logic"],
-    },
-    {
-      title: "AI & Automation",
-      eyebrow: "Intelligent Workflows",
-      copy: "AI is approached as a design and systems opportunity: smarter interfaces, faster workflows, and more adaptive product behavior.",
-      summary:
-        "Automation, prompt systems, and intelligent product surfaces positioned as practical tools rather than vague buzzwords.",
+        "Cloud operations foundation for teams that need Azure-aware junior talent with training experience.",
       accent: "violet",
-      visual: "ai",
-      tags: ["Prompt Systems", "Automation Logic", "AI Interfaces"],
+      visual: "cloud",
+      tags: ["Azure", "VM Creation", "Monitoring", "Backup", "Patching"],
     },
     {
-      title: "Creative Frontend Engineering",
-      eyebrow: "Motion Craft",
-      copy: "Premium motion, responsive interaction design, and immersive visual systems built to make products feel differentiated on first contact.",
+      title: "Trainer Mindset",
+      eyebrow: "Practical Mentoring",
+      copy: "Guiding learners through real-world projects, project structure, basic applications, database operations, and productivity tools.",
       summary:
-        "Cinematic motion, micro-interactions, and high-end frontend polish designed to make recruiters instantly pay attention.",
+        "A communication-first profile suited for roles that value technical clarity, mentoring, and practical execution.",
       accent: "sunset",
       visual: "motion",
-      tags: ["Motion Design", "3D Aesthetics", "Interaction Craft"],
+      tags: ["Training", "Projects", "Databases", "MS Office"],
     },
   ],
   metrics: [
-    { label: "Featured builds", value: "05" },
-    { label: "Core capabilities", value: "20+" },
-    { label: "Expertise zones", value: "04" },
-    { label: "Polish mindset", value: "100%" },
+    { label: "Public GitHub repos", value: "31" },
+    { label: "Experience roles", value: "03" },
+    { label: "Skill categories", value: "03" },
+    { label: "Certifications listed", value: "05" },
   ],
   consoleStream: [
-    "UI systems tuned for responsiveness, motion quality, and visual precision.",
-    "Combining product thinking with immersive vanilla and component-driven experiences.",
-    "Balancing cinematic interaction design with recruiter-friendly clarity.",
-    "Exploring AI workflows, automation, and premium digital presentation.",
+    "Resume content is used for the about, experience, education, and technical skills sections.",
+    "Project cards use real repositories from github.com/kt-pixels and show missing descriptions honestly.",
+    "Skills are grouped for web development, data analytics, and Microsoft Azure cloud computing roles.",
+    "The contact form opens a prepared email so recruiters can reach Kirtan quickly.",
   ],
   focusPoints: [
     {
-      title: "Problem-solving with atmosphere",
-      copy: "The strongest interfaces solve functional challenges while also creating emotional confidence for the user.",
+      title: "Data analytics training",
+      copy: "Python, Pandas, NumPy, SQL, Excel, and Power BI sessions covering cleaning, analysis, dashboards, joins, aggregations, and window functions.",
     },
     {
-      title: "Innovation without losing clarity",
-      copy: "Premium motion, layered visuals, and experimental ideas still need to stay intuitive, accessible, and fast.",
+      title: "Cloud computing fundamentals",
+      copy: "Microsoft Azure services, VM creation, monitoring, backup, patching, and basic cloud infrastructure concepts.",
     },
     {
-      title: "Future-ready engineering",
-      copy: "From frontend systems to AI workflows, the mindset is always about building what the web is about to become.",
+      title: "Full-stack project guidance",
+      copy: "Frontend, backend, MS Office, productivity tools, MySQL, MongoDB, and hands-on project structure support.",
     },
   ],
   skillOrbit: [
+    "HTML",
+    "CSS",
     "JavaScript",
-    "React",
-    "Next.js",
+    "React.js",
     "Node.js",
+    "Express.js",
+    "Python",
+    "Django",
+    "DRF",
+    "MySQL",
     "MongoDB",
-    "GSAP",
-    "Three.js",
-    "Tailwind",
-    "REST APIs",
-    "Firebase",
-    "Prompt Engineering",
-    "Generative AI",
+    "Power BI",
   ],
   skillGroups: [
     {
-      title: "Frontend",
-      score: 96,
+      title: "Web Development",
+      score: 92,
       description:
-        "Interfaces that feel premium, responsive, cinematic, and product-ready.",
+        "Frontend, backend, API, and database technologies listed in the provided brief and resume.",
       items: [
-        "HTML5",
-        "CSS3",
+        "HTML",
+        "CSS",
         "JavaScript",
         "React.js",
-        "Next.js",
+        "Node.js",
+        "Express.js",
+        "Python",
+        "Django",
+        "DRF",
+        "Bootstrap",
         "Tailwind CSS",
-        "GSAP",
-        "Three.js",
-        "Responsive Design",
-        "UI/UX",
+        "MySQL",
+        "MongoDB",
       ],
     },
     {
-      title: "Backend",
-      score: 88,
+      title: "Data Analytics",
+      score: 90,
       description:
-        "Reliable service layers and clean application logic powering modern products.",
-      items: ["Node.js", "Express.js", "MongoDB", "Firebase", "REST APIs"],
+        "Analytics and reporting tools used in resume-backed training responsibilities.",
+      items: [
+        "Excel",
+        "MS Word",
+        "PowerPoint",
+        "Power BI",
+        "SQL",
+        "Python",
+        "Pandas",
+        "NumPy",
+      ],
     },
     {
-      title: "Tools & Platforms",
-      score: 84,
+      title: "Cloud Computing",
+      score: 86,
       description:
-        "Daily workflow tools for shipping, versioning, deploying, and designing better.",
-      items: ["Git", "GitHub", "Vercel", "Netlify", "Figma", "VS Code"],
-    },
-    {
-      title: "AI & Advanced Tech",
-      score: 82,
-      description:
-        "Modern experimentation across prompts, automation, and intelligent workflows.",
-      items: ["Prompt Engineering", "AI Tools", "Automation", "Generative AI"],
+        "Microsoft Azure and operations concepts from the resume plus provided cloud skill list.",
+      items: [
+        "Microsoft Azure",
+        "Virtual Machine Creation",
+        "Azure DevOps",
+        "CI/CD Pipeline",
+        "Networking",
+        "NSG",
+        "Storage",
+        "Backup Management",
+        "Patch Scheduling",
+        "Alerts & Monitoring",
+      ],
     },
   ],
   projects: [
     {
-      title: "Neural Commerce OS",
+      title: "offline-ai-coach",
       description:
-        "A futuristic shopping interface concept combining cinematic product storytelling, AI-style search moments, and conversion-focused UX.",
-      stack: ["Next.js", "GSAP", "Node.js", "MongoDB"],
-      category: "Immersive Product Experience",
+        "GitHub README: A premium SaaS-style self-improvement platform with multi-step onboarding, personalized calorie intelligence, meal distribution, global food database search, and task, habit, workout, and AI coaching modules.",
+      stack: ["JavaScript", "MERN", "React", "Node.js", "Express", "MongoDB"],
+      category: "Full Stack",
+      source: "README verified",
       liveUrl: "",
-      githubUrl: "",
+      githubUrl: "https://github.com/kt-pixels/offline-ai-coach",
+      updated: "Mar 8, 2026",
     },
     {
-      title: "Visionary Studio",
+      title: "stationeryfrontend",
       description:
-        "A creative portfolio system for digital brands with modular storytelling, dynamic theming, and premium interaction layers.",
-      stack: ["React", "Three.js", "Tailwind CSS", "Vercel"],
-      category: "Creative Platform",
-      liveUrl: "",
-      githubUrl: "",
+        "GitHub description is not provided. Repository metadata shows a React/Vite frontend with Tailwind CSS, Redux Toolkit, Framer Motion, charting, routing, and PDF export libraries.",
+      stack: ["React", "Vite", "Tailwind CSS", "Redux Toolkit", "Framer Motion", "Recharts"],
+      category: "Frontend",
+      source: "Repository metadata",
+      liveUrl: "https://stationeryfrontend.vercel.app",
+      githubUrl: "https://github.com/kt-pixels/stationeryfrontend",
+      updated: "Dec 18, 2025",
     },
     {
-      title: "Pulse AI Dashboard",
+      title: "stationerybackend",
       description:
-        "A control center concept for AI workflows, automation pipelines, live analytics, and polished dashboard experiences.",
-      stack: ["JavaScript", "Firebase", "Charts", "REST APIs"],
-      category: "AI Operations Interface",
+        "GitHub description is not provided. Package metadata shows a JavaScript backend using Express, Mongoose, JWT, bcryptjs, CORS, dotenv, and Nodemon.",
+      stack: ["JavaScript", "Node.js", "Express.js", "Mongoose", "JWT", "bcryptjs"],
+      category: "Backend",
+      source: "Repository metadata",
       liveUrl: "",
-      githubUrl: "",
+      githubUrl: "https://github.com/kt-pixels/stationerybackend",
+      updated: "Dec 18, 2025",
     },
     {
-      title: "Orbit Collaboration Hub",
+      title: "bustracker",
       description:
-        "A streamlined team workflow experience focused on speed, interaction fidelity, and beautifully organized product operations.",
-      stack: ["React", "Node.js", "Express.js", "MongoDB"],
-      category: "Team Productivity System",
+        "GitHub description is not provided. README is the default React + Vite template; package metadata shows React Leaflet, geolib, axios, React Router, and Vite.",
+      stack: ["React", "Vite", "React Leaflet", "geolib", "axios", "React Router"],
+      category: "Frontend",
+      source: "Repository metadata",
       liveUrl: "",
-      githubUrl: "",
+      githubUrl: "https://github.com/kt-pixels/bustracker",
+      updated: "May 27, 2024",
     },
     {
-      title: "Astra Motion Lab",
+      title: "rukshak",
       description:
-        "An experimental web playground for animation systems, WebGL layering, and performance-friendly interactive prototypes.",
-      stack: ["HTML5", "CSS3", "GSAP", "Three.js"],
-      category: "Frontend R&D",
+        "GitHub description is not provided. Package metadata shows React, Firebase, Express, HBS, Mongoose, Swiper, React Router, and Vite.",
+      stack: ["React", "Vite", "Firebase", "Express", "Mongoose", "Swiper"],
+      category: "Full Stack",
+      source: "Repository metadata",
       liveUrl: "",
-      githubUrl: "",
+      githubUrl: "https://github.com/kt-pixels/rukshak",
+      updated: "Feb 22, 2024",
+    },
+    {
+      title: "kirtanArtistry.io",
+      description:
+        "GitHub README: An immersive single-page portfolio experience built with HTML, CSS, and Vanilla JavaScript, with motion and 3D powered by GSAP, ScrollTrigger, Lenis, and Three.js.",
+      stack: ["HTML", "CSS", "JavaScript", "GSAP", "Lenis", "Three.js"],
+      category: "Portfolio",
+      source: "README verified",
+      liveUrl: "",
+      githubUrl: "https://github.com/kt-pixels/kirtanArtistry.io",
+      updated: "May 9, 2026",
     },
   ],
   counters: [
-    { label: "Project launch slots", value: 5 },
-    { label: "Stack capabilities", value: 20 },
-    { label: "Career directions", value: 4 },
-    { label: "Performance mentality", value: 100, suffix: "%" },
+    { label: "Public repositories checked", value: 31 },
+    { label: "Experience entries", value: 3 },
+    { label: "Skill categories", value: 3 },
+    { label: "Certification cards", value: 5 },
   ],
   timeline: [
     {
-      label: "Work Experience",
-      title: "Product-minded engineering discipline",
-      meta: "Ready to contribute in teams that care about polished execution.",
+      label: "January 2026 Present",
+      title: "Data Analyst & Cloud Computing Trainer",
+      meta: "DAFFODILS INFOTECH PVT. LTD.",
       description:
-        "The strongest signal here is the ability to think beyond isolated code. The work is framed around outcomes, experience quality, maintainability, and shipping confidence.",
+        "Training students in Python Pandas, NumPy, SQL, Excel, and Power BI for data analytics. Teaching data cleaning, analysis, dashboard creation, SQL queries, joins, aggregations, window functions, Cloud Computing fundamentals, Microsoft Azure services, Azure VM creation, monitoring, backup, and basic cloud infrastructure concepts.",
     },
     {
-      label: "Freelancing",
-      title: "Founder-friendly build energy",
-      meta: "Well suited for landing pages, MVPs, and premium UI delivery.",
+      label: "July 2025",
+      title: "Full Stack Web Developer & Trainer",
+      meta: "Brilliant Institute of Technology",
       description:
-        "This portfolio is intentionally structured to show the kind of visual ambition and implementation quality that makes client-facing work feel valuable and differentiated.",
+        "Training students in Frontend HTML, CSS, JavaScript, React.js and Backend Python, Django, Node.js development. Guiding students in MS Word, Excel, PowerPoint, basic computer operations, Power BI, Cloud Computing fundamentals, Microsoft Azure implementation, hands-on web projects, MySQL, and MongoDB.",
     },
     {
-      label: "Internships",
-      title: "High-growth team readiness",
-      meta: "Open to learning fast inside ambitious engineering environments.",
+      label: "Nav 2024",
+      title: "Full Stack Web Developer And Cloud computing Trainer",
+      meta: "ACENT INDIA TECHNOART PVT. LTD.",
       description:
-        "The focus is bringing curiosity, strong frontend instincts, full-stack adaptability, and the willingness to own details that improve the final product.",
+        "Delivered training on Full Stack Development including HTML, CSS, JavaScript, React.js, Python, and Django. Assisted students in building basic web applications and understanding project structure. Introduced Cloud Computing fundamentals, basic Microsoft Azure services, Virtual Machine setup, cloud resource management, MySQL, and MongoDB.",
+    },
+  ],
+  education: [
+    {
+      title: "Bachelor of Commerce (B.Com)",
+      institution: "Gurugram University, Haryana",
+      meta: "Resume-listed education",
     },
     {
-      label: "Open Source",
-      title: "Collaboration and system thinking",
-      meta: "Built with modularity and maintainability in mind.",
-      description:
-        "Reusable structures, clear naming, accessible patterns, and performance awareness are all signals that map naturally into open-source contribution habits.",
+      title: "Senior Secondary (12th Grade)",
+      institution: "HBSE Board - Haryana Board of School Education",
+      meta: "Resume-listed education",
     },
     {
-      label: "Hackathons",
-      title: "Rapid prototyping mindset",
-      meta: "Fast iteration without sacrificing presentation quality.",
-      description:
-        "From 3D hero scenes to dynamic dashboards, this build shows comfort with blending creativity and engineering under compressed timelines.",
+      title: "Secondary (10th Grade)",
+      institution: "HBSE Board - Haryana Board of School Education",
+      meta: "Resume-listed education",
+    },
+  ],
+  certifications: [
+    {
+      title: "Python",
+      issuer: "Certification listed in provided requirements",
+      meta: "Certification",
     },
     {
-      label: "Achievements & Certifications",
-      title: "Continuous upskilling trajectory",
-      meta: "Always expanding the stack with AI workflows and modern tooling.",
-      description:
-        "The throughline is momentum: leveling up across frontend systems, backend fundamentals, deployment, automation, and recruiter-facing product storytelling.",
+      title: "Data Analyst",
+      issuer: "Certification listed in provided requirements",
+      meta: "Certification",
+    },
+    {
+      title: "Power BI Certification",
+      issuer: "Microsoft Power BI (Interactive Dashboards & Data Visualization)",
+      meta: "Resume + provided requirements",
+    },
+    {
+      title: "Prompt Engineering",
+      issuer: "Certification listed in provided requirements",
+      meta: "Certification",
+    },
+    {
+      title: "Web Development Certification",
+      issuer: "ACENT INDIA TECHNOART PVT. LTD.",
+      meta: "Resume-listed certification",
     },
   ],
   socials: [
@@ -245,15 +304,19 @@ const portfolioData = {
       url: "mailto:kirtankaushik45@gmail.com",
     },
     { label: "Phone", value: "Call directly", url: "tel:+919810298566" },
-    { label: "GitHub", value: "Add profile URL", url: "" },
-    { label: "LinkedIn", value: "Add profile URL", url: "" },
+    { label: "GitHub", value: "kt-pixels", url: "https://github.com/kt-pixels" },
+    {
+      label: "LinkedIn",
+      value: "Kirtan Kaushik",
+      url: "https://www.linkedin.com/in/kirtan-kaushik-71a901324/",
+    },
   ],
   github: {
-    username: "your-github-username",
-    profileUrl: "https://github.com/your-github-username",
+    username: "kt-pixels",
+    profileUrl: "https://github.com/kt-pixels",
   },
   linkedin: {
-    profileUrl: "",
+    profileUrl: "https://www.linkedin.com/in/kirtan-kaushik-71a901324/",
   },
 };
 
@@ -316,9 +379,12 @@ function renderPortfolio() {
   renderFocusPoints();
   renderSkillOrbit();
   renderSkillGroups();
+  renderProjectFilters();
   renderProjects();
   renderCountersMarkup();
   renderTimeline();
+  renderEducation();
+  renderCertifications();
   renderSocialLinks();
   renderFooterSocials();
   renderGitHubFallback();
@@ -543,6 +609,48 @@ function renderSkillGroups() {
     .join("");
 }
 
+function renderProjectFilters() {
+  const wrapper = $("[data-project-filters]");
+  if (!wrapper) {
+    return;
+  }
+
+  const filters = [
+    "All",
+    ...new Set(portfolioData.projects.map((project) => project.category)),
+  ];
+
+  wrapper.innerHTML = filters
+    .map(
+      (filter, index) => `
+      <button
+        class="filter-pill magnetic ${index === 0 ? "is-active" : ""}"
+        type="button"
+        data-project-filter="${filter}"
+        aria-pressed="${index === 0 ? "true" : "false"}"
+      >
+        ${filter}
+      </button>
+    `,
+    )
+    .join("");
+
+  wrapper.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-project-filter]");
+    if (!button) {
+      return;
+    }
+
+    const activeFilter = button.dataset.projectFilter;
+    $$("[data-project-filter]", wrapper).forEach((item) => {
+      const active = item === button;
+      item.classList.toggle("is-active", active);
+      item.setAttribute("aria-pressed", String(active));
+    });
+    filterProjectCards(activeFilter);
+  });
+}
+
 function renderProjects() {
   const wrapper = $("[data-project-grid]");
   wrapper.innerHTML = portfolioData.projects
@@ -551,13 +659,13 @@ function renderProjects() {
       const liveDisabled = !project.liveUrl;
       const sourceDisabled = !project.githubUrl;
       return `
-        <article class="project-card tilt-card is-reveal">
+        <article class="project-card tilt-card is-reveal" data-project-category="${project.category}">
           <div class="project-card__shell">
             <div class="project-card__visual" style="--thumb:url('${thumbnail}')">
               <span class="project-card__label">${project.category}</span>
             </div>
             <div class="project-card__meta">
-              <span>Project ${String(index + 1).padStart(2, "0")}</span>
+              <span>${project.source} / Updated ${project.updated}</span>
               <h3>${project.title}</h3>
               <p>${project.description}</p>
             </div>
@@ -579,6 +687,14 @@ function renderProjects() {
     .join("");
 }
 
+function filterProjectCards(activeFilter) {
+  $$("[data-project-category]").forEach((card) => {
+    const visible =
+      activeFilter === "All" || card.dataset.projectCategory === activeFilter;
+    card.classList.toggle("is-filtered-out", !visible);
+  });
+}
+
 function renderCountersMarkup() {
   const wrapper = $("[data-counters]");
   wrapper.innerHTML = portfolioData.counters
@@ -587,6 +703,44 @@ function renderCountersMarkup() {
       <article class="counter-card glass-panel is-reveal">
         <strong data-counter="${counter.value}" data-suffix="${counter.suffix || ""}">0${counter.suffix || ""}</strong>
         <span>${counter.label}</span>
+      </article>
+    `,
+    )
+    .join("");
+}
+
+function renderEducation() {
+  const wrapper = $("[data-education-grid]");
+  if (!wrapper) {
+    return;
+  }
+
+  wrapper.innerHTML = portfolioData.education
+    .map(
+      (item) => `
+      <article class="credential-card tilt-card is-reveal">
+        <span class="panel-tag">${item.meta}</span>
+        <h3>${item.title}</h3>
+        <p>${item.institution}</p>
+      </article>
+    `,
+    )
+    .join("");
+}
+
+function renderCertifications() {
+  const wrapper = $("[data-certification-grid]");
+  if (!wrapper) {
+    return;
+  }
+
+  wrapper.innerHTML = portfolioData.certifications
+    .map(
+      (item) => `
+      <article class="credential-card tilt-card is-reveal">
+        <span class="panel-tag">${item.meta}</span>
+        <h3>${item.title}</h3>
+        <p>${item.issuer}</p>
       </article>
     `,
     )
@@ -680,23 +834,23 @@ function resolveSocial(item) {
 }
 
 function renderGitHubFallback(
-  message = "Add your GitHub username in script.js to unlock live repository telemetry.",
+  message = "Live GitHub sync will refresh these values when the browser can reach the GitHub API. Static repository data is already loaded below.",
 ) {
   const stats = [
-    { label: "Repo sync", value: "Standby" },
-    { label: "Top focus", value: "Frontend" },
-    { label: "Animation", value: "GSAP / Three" },
-    { label: "Deploy stack", value: "Vercel / Netlify" },
+    { label: "GitHub profile", value: "kt-pixels" },
+    { label: "Public repos", value: "31" },
+    { label: "Featured repos", value: portfolioData.projects.length },
+    { label: "Live fallback", value: "Ready" },
   ];
 
   const languages = [
-    { name: "JavaScript", value: 42 },
-    { name: "React / Next", value: 25 },
-    { name: "CSS / UI", value: 18 },
-    { name: "Node / APIs", value: 15 },
+    { name: "JavaScript", value: 46 },
+    { name: "CSS", value: 24 },
+    { name: "HTML", value: 18 },
+    { name: "Python", value: 12 },
   ];
 
-  $("[data-github-status]").textContent = "Awaiting GitHub username";
+  $("[data-github-status]").textContent = "Static GitHub data loaded";
   $("[data-github-stats]").innerHTML = stats
     .map(
       (item) => `
@@ -728,7 +882,7 @@ function renderGitHubFallback(
     <div class="graph-empty">
       <div>
         <p>${message}</p>
-        <p class="graph__head">Set <strong>portfolioData.github.username</strong> and the graph will load automatically.</p>
+        <p class="graph__head">Profile source: <strong>github.com/kt-pixels</strong></p>
       </div>
     </div>
   `;
@@ -739,7 +893,7 @@ function renderGitHubFallback(
       (project) => `
       <article class="repo-card">
         <div class="repo-card__meta">
-          <span>Portfolio seed</span>
+          <span>${project.category}</span>
           <strong>${project.title}</strong>
         </div>
         <p>${project.description}</p>
@@ -799,22 +953,26 @@ function generateProjectArtwork(project, index) {
 }
 
 function initTheme() {
-  const toggle = $("[data-theme-toggle]");
+  const toggles = $$("[data-theme-toggle]");
   const savedTheme = localStorage.getItem("portfolio-theme");
   const initialTheme = savedTheme || "dark";
   applyTheme(initialTheme);
 
-  toggle.addEventListener("click", () => {
-    const nextTheme = document.body.dataset.theme === "dark" ? "light" : "dark";
-    applyTheme(nextTheme);
+  toggles.forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+      const nextTheme =
+        document.body.dataset.theme === "dark" ? "light" : "dark";
+      applyTheme(nextTheme);
+    });
   });
 }
 
 function applyTheme(theme) {
-  const toggle = $("[data-theme-toggle]");
   document.body.dataset.theme = theme;
   localStorage.setItem("portfolio-theme", theme);
-  toggle.textContent = theme === "dark" ? "Light" : "Dark";
+  $$("[data-theme-toggle]").forEach((toggle) => {
+    toggle.textContent = theme === "dark" ? "Light" : "Dark";
+  });
   document
     .querySelector('meta[name="theme-color"]')
     ?.setAttribute("content", theme === "dark" ? "#060816" : "#eef3ff");
@@ -1421,8 +1579,10 @@ function isValidEmail(email) {
 }
 
 function initSoundSystem() {
-  const toggle = $("[data-sound-toggle]");
-  toggle.textContent = "Sound Off";
+  const toggles = $$("[data-sound-toggle]");
+  toggles.forEach((toggle) => {
+    toggle.textContent = "Sound Off";
+  });
 
   const ensureAudio = async () => {
     if (soundState.context) {
@@ -1469,10 +1629,14 @@ function initSoundSystem() {
     oscillator.stop(soundState.context.currentTime + duration);
   };
 
-  toggle.addEventListener("click", async () => {
-    soundState.enabled = !soundState.enabled;
-    toggle.textContent = soundState.enabled ? "Sound On" : "Sound Off";
-    await playTone(soundState.enabled ? 640 : 260, 0.12);
+  toggles.forEach((toggle) => {
+    toggle.addEventListener("click", async () => {
+      soundState.enabled = !soundState.enabled;
+      toggles.forEach((item) => {
+        item.textContent = soundState.enabled ? "Sound On" : "Sound Off";
+      });
+      await playTone(soundState.enabled ? 640 : 260, 0.12);
+    });
   });
 
   const interactiveTargets = $$(
@@ -1556,7 +1720,9 @@ async function initGitHub() {
     }
 
     const user = await userResponse.json();
-    const repos = (await reposResponse.json()).filter((repo) => !repo.fork);
+    const repos = (await reposResponse.json()).filter(
+      (repo) => !repo.fork && !repo.archived && repo.size > 0,
+    );
     const events = eventsResponse.ok ? await eventsResponse.json() : [];
 
     const totalStars = repos.reduce(
@@ -1650,7 +1816,7 @@ async function initGitHub() {
             <span>${repo.visibility || "public"} repo</span>
             <strong>${repo.name}</strong>
           </div>
-          <p>${repo.description || "A live repository from the GitHub profile."}</p>
+          <p>${repo.description || "No GitHub description provided."}</p>
           <div class="repo-tags">
             <span>${repo.language || "Multi-stack"}</span>
             <span>${repo.stargazers_count} stars</span>

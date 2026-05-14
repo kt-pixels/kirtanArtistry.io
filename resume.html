@@ -1,220 +1,334 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kirtan Kaushik Resume</title>
-  <style>
-    :root {
-      color-scheme: dark;
-      --bg: #08101f;
-      --panel: rgba(14, 22, 42, 0.9);
-      --panel-soft: rgba(255, 255, 255, 0.04);
-      --text: #ecf2ff;
-      --text-soft: #a6b6d8;
-      --line: rgba(255, 255, 255, 0.1);
-      --accent: #67dcff;
-      --accent-secondary: #9f84ff;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kirtan Kaushik Resume Preview</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #07111f;
+        --panel: rgba(14, 22, 42, 0.92);
+        --panel-soft: rgba(255, 255, 255, 0.05);
+        --text: #edf4ff;
+        --text-soft: #a8b8d8;
+        --line: rgba(255, 255, 255, 0.12);
+        --accent: #67dcff;
+        --accent-secondary: #9f84ff;
+      }
 
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background:
-        radial-gradient(circle at top left, rgba(103, 220, 255, 0.16), transparent 26%),
-        radial-gradient(circle at top right, rgba(159, 132, 255, 0.16), transparent 24%),
-        linear-gradient(180deg, #0c1430, var(--bg));
-      color: var(--text);
-      padding: 2rem;
-    }
+      * {
+        box-sizing: border-box;
+      }
 
-    .resume {
-      max-width: 920px;
-      margin: 0 auto;
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      overflow: hidden;
-      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.32);
-    }
-
-    .hero {
-      padding: 2rem;
-      background:
-        linear-gradient(135deg, rgba(103, 220, 255, 0.08), rgba(159, 132, 255, 0.08)),
-        rgba(255, 255, 255, 0.02);
-      border-bottom: 1px solid var(--line);
-    }
-
-    .hero h1,
-    .section h2 {
-      margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      letter-spacing: -0.03em;
-    }
-
-    .hero h1 {
-      font-size: clamp(2rem, 5vw, 3rem);
-      margin-bottom: 0.5rem;
-    }
-
-    .hero p,
-    .section p,
-    .meta span,
-    li {
-      margin: 0;
-      color: var(--text-soft);
-      line-height: 1.7;
-    }
-
-    .meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.85rem 1.2rem;
-      margin-top: 1rem;
-      font-size: 0.96rem;
-    }
-
-    .body {
-      display: grid;
-      gap: 1.25rem;
-      padding: 1.6rem;
-    }
-
-    .section {
-      padding: 1.25rem;
-      border-radius: 18px;
-      background: var(--panel-soft);
-      border: 1px solid var(--line);
-    }
-
-    .section h2 {
-      font-size: 1.15rem;
-      margin-bottom: 0.75rem;
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-    }
-
-    ul {
-      margin: 0;
-      padding-left: 1.15rem;
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-    }
-
-    .skills span {
-      padding: 0.55rem 0.72rem;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--line);
-      color: var(--text-soft);
-      font-size: 0.9rem;
-    }
-
-    .footer {
-      padding: 1.2rem 1.6rem 1.6rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-      color: var(--text-soft);
-      font-size: 0.92rem;
-    }
-
-    .print {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 2.9rem;
-      padding: 0.8rem 1.1rem;
-      border-radius: 999px;
-      background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
-      color: #04111d;
-      font-weight: 700;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    @media print {
       body {
-        background: #fff;
-        color: #000;
-        padding: 0;
+        margin: 0;
+        font-family:
+          "Segoe UI",
+          sans-serif;
+        background:
+          radial-gradient(circle at top left, rgba(103, 220, 255, 0.16), transparent 26%),
+          radial-gradient(circle at top right, rgba(159, 132, 255, 0.16), transparent 24%),
+          linear-gradient(180deg, #0c1430, var(--bg));
+        color: var(--text);
+        padding: 2rem;
       }
 
       .resume {
-        box-shadow: none;
-        border: 0;
+        max-width: 980px;
+        margin: 0 auto;
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.32);
       }
 
-      .print {
-        display: none;
+      .hero,
+      .body,
+      .footer {
+        padding: clamp(1.25rem, 3vw, 2rem);
       }
-    }
-  </style>
-</head>
-<body>
-  <article class="resume">
-    <header class="hero">
-      <h1>Kirtan Kaushik</h1>
-      <p>Full Stack Developer | Frontend Developer | AI Enthusiast | Creative Developer | Software Engineer</p>
-      <div class="meta">
-        <span>Email: kirtankaushik45@gmail.com</span>
-        <span>Phone: +91 9810298566</span>
-        <span>Location: Haryana, India</span>
-      </div>
-    </header>
 
-    <div class="body">
-      <section class="section">
-        <h2>Profile</h2>
-        <p>Creative and product-minded developer focused on cinematic user interfaces, responsive frontend systems, scalable application thinking, and modern AI-assisted workflows. Known for blending visual polish with practical engineering clarity.</p>
-      </section>
+      .hero {
+        background:
+          linear-gradient(135deg, rgba(103, 220, 255, 0.08), rgba(159, 132, 255, 0.08)),
+          rgba(255, 255, 255, 0.02);
+        border-bottom: 1px solid var(--line);
+      }
 
-      <section class="section">
-        <h2>Core Strengths</h2>
-        <div class="skills">
-          <span>HTML5</span>
-          <span>CSS3</span>
-          <span>JavaScript</span>
-          <span>React.js</span>
-          <span>Next.js</span>
-          <span>Node.js</span>
-          <span>MongoDB</span>
-          <span>GSAP</span>
-          <span>Three.js</span>
-          <span>REST APIs</span>
-          <span>Responsive Design</span>
-          <span>Generative AI</span>
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 6vw, 3.4rem);
+        letter-spacing: -0.05em;
+      }
+
+      h2 {
+        margin-bottom: 0.8rem;
+        color: var(--accent);
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+      }
+
+      h3 {
+        margin-bottom: 0.35rem;
+        font-size: 1.05rem;
+      }
+
+      p,
+      li,
+      a,
+      span {
+        color: var(--text-soft);
+        line-height: 1.68;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .meta,
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        margin-top: 1rem;
+      }
+
+      .meta span,
+      .skills span {
+        padding: 0.55rem 0.72rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--line);
+      }
+
+      .body {
+        display: grid;
+        gap: 1.1rem;
+      }
+
+      .section {
+        padding: 1.15rem;
+        border-radius: 18px;
+        background: var(--panel-soft);
+        border: 1px solid var(--line);
+      }
+
+      .entry + .entry {
+        margin-top: 0.9rem;
+        padding-top: 0.9rem;
+        border-top: 1px solid var(--line);
+      }
+
+      ul {
+        margin: 0.5rem 0 0;
+        padding-left: 1.15rem;
+      }
+
+      .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+        border-top: 1px solid var(--line);
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 2.8rem;
+        padding: 0.75rem 1rem;
+        border-radius: 999px;
+        background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+        color: #06101e;
+        font-weight: 700;
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding: 0.75rem;
+        }
+
+        .footer,
+        .button {
+          width: 100%;
+        }
+      }
+
+      @media print {
+        body {
+          padding: 0;
+          background: #fff;
+          color: #000;
+        }
+
+        .resume {
+          border: 0;
+          border-radius: 0;
+          box-shadow: none;
+        }
+
+        .button {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article class="resume">
+      <header class="hero">
+        <h1>Kirtan Kaushik</h1>
+        <p>Cloud and Fullstack Developer</p>
+        <div class="meta">
+          <span>kirtankaushik45@gmail.com</span>
+          <span>+91 9810298566</span>
+          <span>Gurugram, Haryana, India</span>
+          <a href="https://github.com/kt-pixels">github.com/kt-pixels</a>
+          <a href="https://www.linkedin.com/in/kirtan-kaushik-71a901324/"
+            >LinkedIn</a
+          >
         </div>
-      </section>
+      </header>
 
-      <section class="section">
-        <h2>What This Portfolio Signals</h2>
-        <ul>
-          <li>Strong instinct for premium UI/UX and recruiter-facing storytelling.</li>
-          <li>Comfort blending modern frontend motion with maintainable structure.</li>
-          <li>Full-stack awareness across services, APIs, deployment, and product execution.</li>
-          <li>Growing interest in AI workflows, prompt systems, and automation.</li>
-        </ul>
-      </section>
+      <main class="body">
+        <section class="section">
+          <h2>About Me</h2>
+          <p>
+            Motivated technology trainer with knowledge of Data Analytics and
+            Cloud Computing fundamentals. Skilled in Python, SQL, Excel, Power
+            BI, and Microsoft Azure basics. Familiar with cloud monitoring,
+            backup, patching, VM provisioning, and basic Active Directory tasks.
+            Quick learner with strong analytical and problem-solving skills.
+          </p>
+        </section>
 
-      <section class="section">
-        <h2>Career Direction</h2>
-        <p>Open to internships, product engineering roles, frontend positions, creative development work, and future-focused teams that value polish, ownership, and a modern interface mindset.</p>
-      </section>
-    </div>
+        <section class="section">
+          <h2>Experience</h2>
+          <div class="entry">
+            <h3>Data Analyst & Cloud Computing Trainer</h3>
+            <p>DAFFODILS INFOTECH PVT. LTD. | January 2026 Present</p>
+            <ul>
+              <li>
+                Training students in Python, Pandas, NumPy, SQL, Excel, and
+                Power BI for data analytics.
+              </li>
+              <li>
+                Teaching data cleaning, analysis, dashboard creation, SQL
+                queries, joins, aggregations, and window functions.
+              </li>
+              <li>
+                Teaching Microsoft Azure services and demonstrating Azure VM
+                creation, monitoring, backup, and cloud infrastructure concepts.
+              </li>
+            </ul>
+          </div>
+          <div class="entry">
+            <h3>Full Stack Web Developer & Trainer</h3>
+            <p>Brilliant Institute of Technology | July 2025</p>
+            <ul>
+              <li>
+                Training students in HTML, CSS, JavaScript, React.js, Python,
+                Django, and Node.js development.
+              </li>
+              <li>
+                Guiding students in MS Word, Excel, PowerPoint, Power BI, basic
+                computer operations, and real-world web projects.
+              </li>
+              <li>Mentoring students on MySQL and MongoDB.</li>
+            </ul>
+          </div>
+          <div class="entry">
+            <h3>Full Stack Web Developer And Cloud computing Trainer</h3>
+            <p>ACENT INDIA TECHNOART PVT. LTD. | Nav 2024</p>
+            <ul>
+              <li>
+                Delivered training on HTML, CSS, JavaScript, React.js, Python,
+                and Django.
+              </li>
+              <li>
+                Introduced Cloud Computing fundamentals, Microsoft Azure
+                services, Virtual Machine setup, and cloud resource management.
+              </li>
+              <li>Guided learners on MySQL and MongoDB basics.</li>
+            </ul>
+          </div>
+        </section>
 
-    <footer class="footer">
-      <span>Prepared from the live portfolio workspace.</span>
-      <a class="print" href="javascript:window.print()">Print / Save PDF</a>
-    </footer>
-  </article>
-</body>
+        <section class="section">
+          <h2>Technical Skills</h2>
+          <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>Python</span>
+            <span>Django</span>
+            <span>DRF</span>
+            <span>Bootstrap</span>
+            <span>Tailwind CSS</span>
+            <span>MySQL</span>
+            <span>MongoDB</span>
+            <span>Excel</span>
+            <span>Power BI</span>
+            <span>SQL</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>Microsoft Azure</span>
+            <span>Azure VM Creation</span>
+            <span>Backup Management</span>
+            <span>Patch Scheduling</span>
+            <span>Alerts & Monitoring</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Education</h2>
+          <div class="entry">
+            <h3>Bachelor of Commerce (B.Com)</h3>
+            <p>Gurugram University, Haryana</p>
+          </div>
+          <div class="entry">
+            <h3>Senior Secondary (12th Grade)</h3>
+            <p>HBSE Board - Haryana Board of School Education</p>
+          </div>
+          <div class="entry">
+            <h3>Secondary (10th Grade)</h3>
+            <p>HBSE Board - Haryana Board of School Education</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Certifications</h2>
+          <div class="skills">
+            <span>Python</span>
+            <span>Data Analyst</span>
+            <span>Power BI</span>
+            <span>Prompt Engineering</span>
+            <span>Web Development Certification</span>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>HTML preview. The original PDF is included in assets.</span>
+        <a
+          class="button"
+          href="assets/Kirtan-Kaushik-Resume.pdf"
+          download="Kirtan-Kaushik-Resume.pdf"
+          >Download Original PDF</a
+        >
+      </footer>
+    </article>
+  </body>
 </html>

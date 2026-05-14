@@ -1,22 +1,31 @@
 # Kirtan Kaushik Portfolio
 
-An immersive single-page portfolio experience built with `HTML`, `CSS`, and `Vanilla JavaScript`, with motion and 3D powered by `GSAP`, `ScrollTrigger`, `Lenis`, and `Three.js`.
+A modern, recruiter-facing portfolio for Kirtan Kaushik. The content is grounded in the provided resume and real repositories from `https://github.com/kt-pixels`.
+
+The site is built with `HTML`, `CSS`, and `Vanilla JavaScript`, with motion and 3D powered by `GSAP`, `ScrollTrigger`, `Lenis`, and `Three.js`.
 
 ## Files
 
 - `index.html` contains the semantic structure, SEO metadata, and script/style loading.
 - `style.css` contains the visual system, theme engine, responsive layouts, and motion styling.
-- `script.js` contains the portfolio data, rendering logic, interactions, GitHub integration, and Three.js hero scene.
+- `script.js` contains resume-backed portfolio data, rendering logic, project filters, interactions, GitHub integration, and Three.js hero scene.
+- `assets/Kirtan-Kaushik-Resume.pdf` is the original resume download used by the portfolio.
+- `resume.html` is a browser-friendly resume preview using the same authentic details.
 - `preview-server.js` is a tiny local server for `localhost` previewing.
 
-## Customize The Content
+## Content Rules
 
-Update the `portfolioData` object in `script.js`.
+The project section uses real GitHub repositories only. Many repositories currently have no GitHub description, so the UI states that honestly and uses repository language/package metadata where available.
 
-- Replace the placeholder `github.username` and `github.profileUrl`.
-- Replace the placeholder GitHub and LinkedIn social links in `socials`.
-- Replace the five sample project cards with your actual project titles, descriptions, stacks, and URLs.
-- Update the timeline copy with your verified internships, freelance work, hackathons, certifications, and achievements.
+Resume-backed sections include:
+
+- About
+- Skills
+- Experience
+- Education
+- Certifications
+
+Update the `portfolioData` object in `script.js` only when resume details, certification details, social links, or GitHub repository data change.
 
 ## Local Preview
 
@@ -65,7 +74,7 @@ http://127.0.0.1:4173
 
 ## SEO Notes
 
-- Update the meta title, description, and Open Graph fields in `index.html`.
+- Meta title, description, Open Graph fields, and structured data are already aligned with Kirtan's current portfolio direction.
 - Add a real Open Graph image once you create one for the portfolio.
 - Add your production domain to structured data once deployed.
 - Create `sitemap.xml` and `robots.txt` after your final production URL is known.
